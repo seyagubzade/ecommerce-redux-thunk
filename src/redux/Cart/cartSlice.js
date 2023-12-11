@@ -6,8 +6,8 @@ const initialState = {
     error: null
 }
 
-const basketSlice = createSlice({
-    name: 'basketSlice',
+const cartSlice = createSlice({
+    name: 'cartSlice',
     initialState,
     reducers: {
         addItemToBasket: (state, action) => {
@@ -31,5 +31,5 @@ const basketSlice = createSlice({
     }
 })
 
-export const {addItemToBasket} = basketSlice.actions;
-export const basketReducer = basketSlice.reducer;
+export const {addItemToBasket} = cartSlice.actions;
+export const cartReducer = cartSlice.reducer;

@@ -1,32 +1,155 @@
 {
-  "order": [
+  "books": [
     {
-      "id": 2,
-      "title": "Mens Casual Premium Slim Fit T-Shirts ",
-      "price": 22.3,
-      "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-      "rating": {
-        "rate": 4.1,
-        "count": 259
-      },
-      "count": 1,
-      "totalPrice": 22.3
+      "id": 6,
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "description": "Embark on a magical journey with Harry Potter, a young wizard discovering his identity. Written by J.K. Rowling, this fantasy novel introduces readers to the enchanting world of Hogwarts, spells, and friendship.",
+      "imageUrl": "http://books.google.com/books/content?id=ZiJMzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "author": "J.K. Rowling",
+      "pageSize": 400,
+      "publishedDate": "1997-06-26",
+      "genre": "Fantasy",
+      "price": 8.5
     },
     {
-      "id": 3,
-      "title": "Mens Cotton Jacket",
-      "price": 55.99,
-      "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-      "rating": {
-        "rate": 4.7,
-        "count": 500
-      },
+      "id": 8,
+      "title": "The Lord of the Rings",
+      "description": "J.R.R. Tolkien's epic fantasy trilogy, 'The Lord of the Rings,' takes readers on a quest to destroy the One Ring and defeat the dark lord Sauron. A timeless tale of friendship, courage, and the battle between good and evil.",
+      "imageUrl": "http://books.google.com/books/content?id=Jelk7EMpA7sC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "author": "J.R.R. Tolkien",
+      "pageSize": 1100,
+      "publishedDate": "1954-07-29",
+      "genre": "Fantasy",
+      "price": 7.9
+    },
+    {
+      "id": 11,
+      "title": "Frankenstein",
+      "description": "Mary Shelley's 'Frankenstein' is a Gothic masterpiece that explores the consequences of playing god. Victor Frankenstein, a young scientist, creates a creature that becomes a symbol of humanity's hubris.",
+      "imageUrl": "http://books.google.com/books/content?id=9xHCAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "author": "Mary Shelley",
+      "pageSize": 220,
+      "publishedDate": "1818-01-01",
+      "genre": "Gothic Fiction",
+      "price": 4
+    },
+    {
+      "id": 13,
+      "title": "Wuthering Heights",
+      "description": "Emily Brontë's 'Wuthering Heights' is a passionate tale of love and revenge on the Yorkshire moors. Heathcliff and Catherine's intense, doomed romance unfolds in this classic work of English literature.",
+      "imageUrl": "https://books.google.com/books/content?id=S2Yvf-tWNdUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "author": "Emily Brontë",
+      "pageSize": 320,
+      "publishedDate": "1847-12-19",
+      "genre": "Romance",
+      "price": 15
+    },
+    {
+      "id": 15,
+      "title": "The Odyssey",
+      "description": "Homer's 'The Odyssey' is an ancient Greek epic poem that follows Odysseus' journey home after the Trojan War. Filled with adventure, mythical creatures, and divine intervention, it is a cornerstone of Western literature.",
+      "imageUrl": "https://books.google.com/books/content?id=1_lyEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "author": "Homer",
+      "pageSize": 450,
+      "publishedDate": "8th Century BCE",
+      "genre": "Epic Poetry",
+      "price": 20
+    },
+    {
+      "id": 16,
+      "title": "The Picture of Dorian Gray",
+      "description": "Oscar Wilde's only novel, 'The Picture of Dorian Gray,' explores the consequences of a life of hedonism. Dorian Gray remains eternally youthful while his portrait ages, reflecting the moral decay hidden behind his beauty.",
+      "imageUrl": "https://books.google.com/books/content?id=Us0gTQUSAvsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "author": "Oscar Wilde",
+      "pageSize": 250,
+      "publishedDate": "7th Century",
+      "genre": "Epic Poetry",
+      "price": 8
+    },
+    {
+      "id": 17,
+      "title": "The Brothers Karamazov",
+      "description": "Fyodor Dostoevsky's 'The Brothers Karamazov' delves into complex questions of morality, faith, and the nature of existence. The Karamazov brothers grapple with their relationships and their father's legacy.",
+      "imageUrl": "https://books.google.com/books/content?id=qbdlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "author": "Fyodor Dostoevsky",
+      "pageSize": 500,
+      "publishedDate": "1880-11-11",
+      "genre": "Philosophical Fiction",
+      "price": 14
+    },
+    {
+      "id": 123,
+      "title": "The Brothers Karamazov copy",
+      "description": "Fyodor Dostoevsky's 'The Brothers Karamazov' delves into complex questions of morality, faith, and the nature of existence. The Karamazov brothers grapple with their relationships and their father's legacy.",
+      "imageUrl": "https://books.google.com/books/content?id=qbdlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "author": "Fyodor Dostoevsky",
+      "pageSize": 500,
+      "publishedDate": "1880-11-11",
+      "genre": "Philosophical Fiction",
+      "price": 6
+    },
+    {
+      "id": 18,
+      "title": "The Count of Monte Cristo",
+      "description": "Alexandre Dumas' 'The Count of Monte Cristo' is a riveting tale of revenge and redemption. Edmond Dantès, betrayed and imprisoned, escapes to enact justice on those who wronged him.",
+      "imageUrl": "https://books.google.com/books/content?id=nLdLoB7zZ9gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "author": "Alexandre Dumas",
+      "pageSize": 700,
+      "publishedDate": "1844-08-28",
+      "genre": "Adventure",
+      "price": 5
+    },
+    {
+      "id": 19,
+      "title": "The Jungle Book",
+      "description": "Rudyard Kipling's 'The Jungle Book' is a collection of captivating stories set in the Indian jungle. Follow Mowgli, Baloo, and Bagheera as they navigate the challenges of the wild and encounter unforgettable characters.",
+      "imageUrl": "https://books.google.com/books/content?id=aYRJinzXUMwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "author": "Rudyard Kipling",
+      "pageSize": 180,
+      "publishedDate": "1894-10-01",
+      "genre": "Children's Literature",
+      "price": 4
+    },
+    {
+      "id": 1702237713236,
+      "title": "Coding with JavaScript For Dummies",
+      "description": "Go from beginner to builder quickly with this hands-on JavaScript guide Coding with JavaScript For Dummies provides easy, hands-on instruction for anyone looking to learn this popular client-side language. ",
+      "imageUrl": "https://media.wiley.com/product_data/coverImage300/27/07645011/0764501127.jpg",
+      "author": "Chris Minnick and Eva Holland",
+      "pageSize": 371,
+      "publishedDate": "2023-12-01",
+      "genre": "Other",
+      "price": 25
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "title": "The Great Gatsby",
+      "description": "A novel by F. Scott Fitzgerald",
+      "imageUrl": "https://books.google.com/books/content?id=iXn5U2IzVH0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "author": "F. Scott Fitzgerald",
+      "pageSize": 200,
+      "publishedDate": "1925-04-10",
+      "genre": "Fiction",
+      "count": 2,
+      "price": 5,
+      "status": "On Courier",
+      "totalPrice": 10
+    },
+    {
+      "id": 17,
+      "title": "The Brothers Karamazov",
+      "description": "Fyodor Dostoevsky's 'The Brothers Karamazov' delves into complex questions of morality, faith, and the nature of existence. The Karamazov brothers grapple with their relationships and their father's legacy.",
+      "imageUrl": "https://books.google.com/books/content?id=qbdlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "author": "Fyodor Dostoevsky",
+      "pageSize": 500,
+      "publishedDate": "1880-11-11",
+      "genre": "Philosophical Fiction",
       "count": 1,
-      "totalPrice": 55.99
+      "price": 14,
+      "status": "Pending",
+      "totalPrice": 14
     }
   ]
 }

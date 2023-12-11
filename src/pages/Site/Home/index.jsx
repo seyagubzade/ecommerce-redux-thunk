@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { GetProductsData } from "../../redux/Products/api_actions";
-import { addItemToBasket } from "../../redux/Basket/basketSlice";
+
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -9,7 +8,7 @@ const Home = () => {
   const { basket } = useSelector((state) => state.basket);
 
   const getProductData = () => {
-    dispatch(GetProductsData());
+    // dispatch(getProductData());
   };
   useEffect(() => {
     getProductData();
@@ -23,8 +22,6 @@ const Home = () => {
         <ul>
           {product?.map((item, index) => {
             return <li key={index}>{item.title} <button onClick={()=>{
-                console.log(item)
-                dispatch(addItemToBasket(item))
             }}>Add to basket</button></li>;
           })}
         </ul>
