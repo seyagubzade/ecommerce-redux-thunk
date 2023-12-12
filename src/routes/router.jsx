@@ -26,7 +26,7 @@ const RoutesConfig = [
                 element: <p>Error 404</p>
             },
             {
-                path: 'home',
+                path: '',
                 element: <Home />
             },
             {
