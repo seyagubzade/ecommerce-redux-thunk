@@ -22,7 +22,7 @@ const DesktopHeader = ({items}) => {
             </Col>
             <Col span={16} className="support-text">
               <p>Free Support 24/7</p>
-              <p><b>+01-202-555-0181</b></p>
+              <p style={{textWrap: 'nowrap'}}><b>+01-202-555-0181</b></p>
             </Col>
           </Row>
         </Col>
@@ -71,7 +71,6 @@ const StyledHeader = styled.header`
     font-size: 14px;
     line-height: 1.75;
     min-width: 940px;
-    
     margin: 12px auto;
     padding: 0 20px;
     .ant-row{
@@ -133,6 +132,9 @@ const StyledHeader = styled.header`
     border-bottom-width: 2px;
     border-bottom-color: #62ab00!important;
 }
+.header-bottom{
+  margin-top: 12px;
+}
 .cart-text{
   width: 120px;
   text-wrap: nowrap;
@@ -153,6 +155,7 @@ const StyledHeader = styled.header`
 
 const StyledHeaderSearch = styled.div`
     position: relative;
+    width: 350px;
     input {
       font-size: 16px;
       color: #333;

@@ -21,16 +21,20 @@ const SiteHeader = () => {
     { name: 'Contact', path: '/contact' },
   ]
   return (
-    <Fragment>
+    <HeaderContent>
     {
       isTabletOrMobile && <MobileHeader items={items}/>
     }
      {
       isDesktopOrLaptop && <DesktopHeader items={items}/>
      }
-    </Fragment>
+    </HeaderContent>
   )
 }
 
+const HeaderContent=styled.div`
+width: 100%;
+background: #fff;
+`
 
 export default SiteHeader
