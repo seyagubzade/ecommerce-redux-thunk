@@ -9,7 +9,7 @@ import { useMediaQuery } from 'react-responsive'
 const DesktopHeader = ({items}) => {
   return (
     <StyledHeader>
-         <Row className="header-top">
+         <Row className="header-top" style={{position: 'sticky', zIndex: '1000'}}>
         <Col span={5}>
           <Link to='/' className='logo'>
             <img src={Logo} alt="logo" />

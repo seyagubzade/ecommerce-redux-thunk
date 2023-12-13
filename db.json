@@ -9,7 +9,8 @@
       "pageSize": 400,
       "publishedDate": "1997-06-26",
       "genre": "Fantasy",
-      "price": 8.5
+      "price": 8.5,
+      "isBestSeller": true
     },
     {
       "id": 8,
@@ -20,7 +21,8 @@
       "pageSize": 1100,
       "publishedDate": "1954-07-29",
       "genre": "Fantasy",
-      "price": 7.9
+      "price": 7.9,
+      "isBestSeller": true
     },
     {
       "id": 11,
@@ -31,7 +33,8 @@
       "pageSize": 220,
       "publishedDate": "1818-01-01",
       "genre": "Gothic Fiction",
-      "price": 4
+      "price": 4,
+      "isBestSeller": false
     },
     {
       "id": 13,
@@ -42,7 +45,8 @@
       "pageSize": 320,
       "publishedDate": "1847-12-19",
       "genre": "Romance",
-      "price": 15
+      "price": 15,
+      "isBestSeller": true
     },
     {
       "id": 15,
@@ -53,7 +57,8 @@
       "pageSize": 450,
       "publishedDate": "8th Century BCE",
       "genre": "Epic Poetry",
-      "price": 20
+      "price": 20,
+      "isBestSeller": true
     },
     {
       "id": 16,
@@ -64,7 +69,8 @@
       "pageSize": 250,
       "publishedDate": "7th Century",
       "genre": "Epic Poetry",
-      "price": 8
+      "price": 8,
+      "isBestSeller": true
     },
     {
       "id": 17,
@@ -75,7 +81,8 @@
       "pageSize": 500,
       "publishedDate": "1880-11-11",
       "genre": "Philosophical Fiction",
-      "price": 14
+      "price": 14,
+      "isBestSeller": true
     },
     {
       "id": 123,
@@ -86,7 +93,8 @@
       "pageSize": 500,
       "publishedDate": "1880-11-11",
       "genre": "Philosophical Fiction",
-      "price": 6
+      "price": 6,
+      "isBestSeller": false
     },
     {
       "id": 18,
@@ -97,7 +105,8 @@
       "pageSize": 700,
       "publishedDate": "1844-08-28",
       "genre": "Adventure",
-      "price": 5
+      "price": 5,
+      "isBestSeller": false
     },
     {
       "id": 19,
@@ -108,7 +117,8 @@
       "pageSize": 180,
       "publishedDate": "1894-10-01",
       "genre": "Children's Literature",
-      "price": 4
+      "price": 4,
+      "isBestSeller": false
     },
     {
       "id": 1702237713236,
@@ -119,7 +129,8 @@
       "pageSize": 371,
       "publishedDate": "2023-12-01",
       "genre": "Other",
-      "price": 25
+      "price": 25,
+      "isBestSeller": false
     }
   ],
   "orders": [

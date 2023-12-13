@@ -8,7 +8,7 @@ const Site = () => {
   return (
     <Layout>
       <SiteHeader />
-      <Content style={{ padding: '0 48px', minHeight: '100vh' }}>
+      <Content style={{ minHeight: '100vh', background: "#fff" }}>
         <Outlet />
       </Content>
       <SiteFooter />
