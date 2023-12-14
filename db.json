@@ -2,7 +2,7 @@
   "books": [
     {
       "id": 6,
-      "title": "Harry Potter and the Sorcerer's Stone",
+      "title": "Harry Potter and the Sorcerer's Stone ",
       "description": "Embark on a magical journey with Harry Potter, a young wizard discovering his identity. Written by J.K. Rowling, this fantasy novel introduces readers to the enchanting world of Hogwarts, spells, and friendship.",
       "imageUrl": "http://books.google.com/books/content?id=ZiJMzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
       "author": "J.K. Rowling",
@@ -131,6 +131,17 @@
       "genre": "Other",
       "price": 25,
       "isBestSeller": false
+    },
+    {
+      "id": 1702564529756,
+      "title": "Est quasi dicta accu",
+      "description": "Id neque ducimus el",
+      "imageUrl": "https://images.penguinrandomhouse.com/cover/9780451530578",
+      "author": "Et ipsum eius culpa",
+      "pageSize": 123,
+      "publishedDate": "2023-12-05",
+      "genre": "Romance",
+      "price": 53
     }
   ],
   "orders": [
@@ -145,7 +156,7 @@
       "genre": "Fiction",
       "count": 2,
       "price": 5,
-      "status": "Pending",
+      "status": "Accepted",
       "totalPrice": 10
     },
     {
@@ -161,6 +172,80 @@
       "price": 14,
       "status": "Pending",
       "totalPrice": 14
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "title": "The Great Gatsby",
+      "description": "A novel by F. Scott Fitzgerald",
+      "imageUrl": "https://books.google.com/books/content?id=iXn5U2IzVH0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "author": "F. Scott Fitzgerald",
+      "pageSize": 200,
+      "publishedDate": "1925-04-10",
+      "genre": "Fiction",
+      "count": 2,
+      "price": 5,
+      "status": "Pending",
+      "totalPrice": 10
+    },
+    {
+      "id": 18,
+      "title": "The Count of Monte Cristo",
+      "description": "Alexandre Dumas' 'The Count of Monte Cristo' is a riveting tale of revenge and redemption. Edmond Dantès, betrayed and imprisoned, escapes to enact justice on those who wronged him.",
+      "imageUrl": "https://books.google.com/books/content?id=nLdLoB7zZ9gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "author": "Alexandre Dumas",
+      "pageSize": 700,
+      "publishedDate": "1844-08-28",
+      "genre": "Adventure",
+      "price": 5,
+      "isBestSeller": false,
+      "count": 1,
+      "totalPrice": 5
+    },
+    {
+      "id": 8,
+      "title": "The Lord of the Rings",
+      "description": "J.R.R. Tolkien's epic fantasy trilogy, 'The Lord of the Rings,' takes readers on a quest to destroy the One Ring and defeat the dark lord Sauron. A timeless tale of friendship, courage, and the battle between good and evil.",
+      "imageUrl": "http://books.google.com/books/content?id=Jelk7EMpA7sC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "author": "J.R.R. Tolkien",
+      "pageSize": 1100,
+      "publishedDate": "1954-07-29",
+      "genre": "Fantasy",
+      "price": 7.9,
+      "isBestSeller": true,
+      "count": 1,
+      "totalPrice": 7.9
+    },
+    {
+      "id": 11,
+      "title": "Frankenstein",
+      "description": "Mary Shelley's 'Frankenstein' is a Gothic masterpiece that explores the consequences of playing god. Victor Frankenstein, a young scientist, creates a creature that becomes a symbol of humanity's hubris.",
+      "imageUrl": "http://books.google.com/books/content?id=9xHCAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "author": "Mary Shelley",
+      "pageSize": 220,
+      "publishedDate": "1818-01-01",
+      "genre": "Gothic Fiction",
+      "price": 4,
+      "isBestSeller": false,
+      "count": 1,
+      "totalPrice": 4
+    }
+  ],
+  "wishlist": [
+    {
+      "id": 1,
+      "title": "The Great Gatsby",
+      "description": "A novel by F. Scott Fitzgerald",
+      "imageUrl": "https://books.google.com/books/content?id=iXn5U2IzVH0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "author": "F. Scott Fitzgerald",
+      "pageSize": 200,
+      "publishedDate": "1925-04-10",
+      "genre": "Fiction",
+      "count": 2,
+      "price": 5,
+      "status": "Pending",
+      "totalPrice": 10
     }
   ]
 }

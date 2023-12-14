@@ -2,8 +2,11 @@ import { Col } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { useCart } from "../../context/CartContext";
 
 const CustomCard = ({ item }) => {
+  const {addItemToCart} = useCart();
+
   return (
     <StyledCard>
       <div style={{ minWidth: "250px" }} className="product-card">
@@ -18,29 +21,26 @@ const CustomCard = ({ item }) => {
           </h3>
         </div>
         <div className="product-card--body">
+        <Link to={`/detail/${item.id}`}>
           <div className="card-image">
-            <img
-              src={item.imageUrl}
-              alt=""
-              style={{ width: "180px", height: "280px", objectFit: "contain" }}
-            />
+            
+              <img
+                src={item.imageUrl}
+                alt=""
+                style={{ width: "180px", height: "280px", objectFit: "contain" }}
+              />
             <div className="hover-contents">
-              <a
-                href="product-details.html"
-                className="hover-image"
-                tabindex="0"
-              >
-                <img src="image/products/product-6.jpg" alt="" />
-              </a>
               <div className="hover-btns">
-                <Link href="cart.html" className="single-btn" tabindex="0">
+                <Link onClick={()=>{
+                  addItemToCart(item)
+                }} className="single-btn" tabindex="0">
                   <i className="fas fa-shopping-basket"></i>
                 </Link>
                 <Link href="wishlist.html" className="single-btn" tabindex="0">
                   <i className="fas fa-heart"></i>
                 </Link>
                 <Link
-                  href="#"
+                  to={`detail/${item.id}`}
                   data-bs-toggle="modal"
                   data-bs-target="#quickModal"
                   className="single-btn"
@@ -51,6 +51,8 @@ const CustomCard = ({ item }) => {
               </div>
             </div>
           </div>
+          </Link>
+
           <div className="price-block">
             <span className="price">£{item.price}</span>
             <del className="price-old">£15.20</del>

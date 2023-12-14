@@ -2,6 +2,7 @@ import { Col, Row } from "antd";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import SwiperCardList from "../SwiperCardList";
+import SwiperCardsSmall from "../SwiperCardsSmall";
 
 const BestSellers = ({items}) => {
     const [bestSellers, setBestSellers] = useState([]);
@@ -33,7 +34,7 @@ const BestSellers = ({items}) => {
                 {/* {
                     bestSellers.map((item)=><li>{item.title} {item.isBestSeller}</li>)
                 } */}
-                {bestSellers && <SwiperCardList items={bestSellers} slidesPerView={2} isSmall={true}/>}
+                {bestSellers && <SwiperCardList items={bestSellers} rows={1} slidesPerView={2} isSmall={true}/>}
             </Col>
           </Row>
         </div>
@@ -44,6 +45,20 @@ const BestSellers = ({items}) => {
 const StyledContainer = styled.div`
   max-width: 920px;
   margin: 20px auto;
+  .product-card img{
+    width: 120px!important;
+    height: 150px!important;
+}
+.swiper-slide {
+  height: 300px!important;
+}
+.swiper-slide>div {
+  margin: 0!important;
+}
+.swiper-pagination {
+  bottom: 0;
+  margin-top: 12px;
+}
   .section-title--bordered {
     position: relative;
     border-bottom: 1px solid #e5e5e5;
