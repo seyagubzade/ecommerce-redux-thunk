@@ -9,17 +9,23 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { PostCartItem } from "../../../redux/Cart/api_actions";
 import { useCart } from "../../../context/CartContext";
+import { addToWishlist } from "../../../redux/Wishlist/wishlistSlice";
 
 const DetailPage = () => {
   const { id } = useParams();
   const {addItemToCart} = useCart();
   const dispatch = useDispatch();
   const { currentProduct, loading, error } = useSelector((state) => state.product);
+  const { wishlist } = useSelector((state) => state.wishlist);
   const getProduct = () => {
     dispatch(GetSingleProduct(id));
   };
   const handleAddToCart = () => {
     addItemToCart(currentProduct)
+  }
+  const handleAddToWishlist = () =>{
+    dispatch(addToWishlist(currentProduct))
+
   }
   useEffect(() => {
     getProduct();
@@ -49,7 +55,7 @@ const DetailPage = () => {
               <Paragraph><b>Description:</b> {currentProduct.description}</Paragraph>
 
               <Button onClick={handleAddToCart} style={{ marginRight: '12px' }}><i class="fa-light fa-plus"></i> Add To Cart</Button>
-              <Button><i style={{ marginRight: '6px' }} class="fa-solid fa-heart"></i>Add to wishlist</Button>
+              <Button onClick={handleAddToWishlist}><i style={{ marginRight: '6px' }} class="fa-solid fa-heart"></i>Add to wishlist</Button>
             </Col>
           </Fragment>
         ) : null}

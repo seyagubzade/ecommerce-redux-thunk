@@ -4,19 +4,19 @@ import styled from "styled-components";
 import SwiperCardList from "../SwiperCardList";
 import SwiperCardsSmall from "../SwiperCardsSmall";
 
-const BestSellers = ({items}) => {
-    const [bestSellers, setBestSellers] = useState([]);
-    useEffect(()=>{
-        let newData = items.filter((item)=>item.isBestSeller==true)
-        setBestSellers([...newData])
-        console.log(newData)
-    },[items])
+const BestSellers = ({ items }) => {
+  const [bestSellers, setBestSellers] = useState([]);
+  useEffect(() => {
+    let newData = items.filter((item) => item.isBestSeller == true);
+    setBestSellers([...newData]);
+    console.log(newData);
+  }, [items]);
   return (
     <div
       style={{
         backgroundImage:
           "url('https://htmldemo.net/pustok/pustok/image/bg-images/best-seller-bg.jpg')",
-          padding:'40px 20px'
+        padding: "40px 20px",
       }}
     >
       <StyledContainer>
@@ -25,16 +25,23 @@ const BestSellers = ({items}) => {
         </div>
         <div className="best-seller-block">
           <Row>
-            <Col xs={24} md={12}>
+            <Col xs={24} md={10} lg={12}>
               <div class="author-image">
-                <img src="https://htmldemo.net/pustok/pustok/image/others/best-seller-author.jpg" alt="" />
+                <img
+                  src="https://htmldemo.net/pustok/pustok/image/others/best-seller-author.jpg"
+                  alt=""
+                />
               </div>
             </Col>
-            <Col xs={24} md={12}>
-                {/* {
-                    bestSellers.map((item)=><li>{item.title} {item.isBestSeller}</li>)
-                } */}
-                {bestSellers && <SwiperCardList items={bestSellers} rows={1} slidesPerView={2} isSmall={true}/>}
+            <Col xs={24} md={14} lg={12} style={{ padding: "0 10px" }}>
+              {bestSellers && (
+                <SwiperCardList
+                  items={bestSellers}
+                  rows={1}
+                  slidesPerView={2}
+                  isSmall={true}
+                />
+              )}
             </Col>
           </Row>
         </div>
@@ -45,20 +52,20 @@ const BestSellers = ({items}) => {
 const StyledContainer = styled.div`
   max-width: 920px;
   margin: 20px auto;
-  .product-card img{
-    width: 120px!important;
-    height: 150px!important;
-}
-.swiper-slide {
-  height: 300px!important;
-}
-.swiper-slide>div {
-  margin: 0!important;
-}
-.swiper-pagination {
-  bottom: 0;
-  margin-top: 12px;
-}
+  .product-card img {
+    width: 120px !important;
+    height: 150px !important;
+  }
+  .swiper-slide {
+    height: 300px !important;
+  }
+  .swiper-slide > div {
+    margin: 0 !important;
+  }
+  .swiper-pagination {
+    bottom: 0;
+    margin-top: 12px;
+  }
   .section-title--bordered {
     position: relative;
     border-bottom: 1px solid #e5e5e5;
@@ -82,6 +89,9 @@ const StyledContainer = styled.div`
     background: #fff;
     border-radius: 3px;
     padding: 30px;
+  }
+  .author-image img {
+    width: 100%
   }
   @media screen and (max-width: 920px) {
     max-width: 720px;

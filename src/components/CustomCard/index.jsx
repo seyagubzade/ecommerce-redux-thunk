@@ -3,9 +3,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { useCart } from "../../context/CartContext";
+import toast from "react-hot-toast";
+import { useDispatch } from "react-redux";
+import { addToWishlist } from "../../redux/Wishlist/wishlistSlice";
 
 const CustomCard = ({ item }) => {
   const {addItemToCart} = useCart();
+  const dispatch = useDispatch()
 
   return (
     <StyledCard>
@@ -36,7 +40,9 @@ const CustomCard = ({ item }) => {
                 }} className="single-btn" tabindex="0">
                   <i className="fas fa-shopping-basket"></i>
                 </Link>
-                <Link href="wishlist.html" className="single-btn" tabindex="0">
+                <Link onClick={()=>{
+                  dispatch(addToWishlist(item))
+                }} className="single-btn" tabindex="0">
                   <i className="fas fa-heart"></i>
                 </Link>
                 <Link

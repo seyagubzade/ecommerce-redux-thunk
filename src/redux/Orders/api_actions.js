@@ -36,7 +36,6 @@ export const DeleteOrder = createAsyncThunk("DeleteOrder", async (id) => {
 
 export const UpdateOrder = createAsyncThunk("UpdateOrder", async ({ id, item }, thunkAPI) => {
   try {
-    console.log("UpdateOrder works>>",id, item)
     const response = await axios.put(`http://localhost:3000/orders/${id}`, item);
     return response.data;
   } catch (error) {

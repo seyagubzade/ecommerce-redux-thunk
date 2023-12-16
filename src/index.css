@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --swiper-theme-color: #62ab00;
 }
 
 body {
@@ -16,4 +17,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.ant-menu-item-selected, .ant-menu-light>.ant-menu .ant-menu-item-selected {
+  color: #62ab00!important;
+}
+
+.ant-menu-light .ant-menu-item-selected, .ant-menu-light>.ant-menu .ant-menu-item-selected {
+  background-color: #f0ffe6;
 }

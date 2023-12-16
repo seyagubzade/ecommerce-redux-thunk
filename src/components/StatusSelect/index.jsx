@@ -5,14 +5,16 @@ import { useDispatch } from "react-redux";
 import { UpdateOrder } from "../../redux/Orders/api_actions";
 import { useNavigate } from "react-router";
 
-const StatusSelect = ({ item }) => {
+const StatusSelect = ({ item, updateStatusOrder }) => {
   const [status, setStatus] = useState("");
   const dispatch = useDispatch()
   const {id} = item
 
   const handleStatusChange = (value) => {
     setStatus(value);
-    dispatch(UpdateOrder({ id, item: {...item, status:value} }));
+    // console.log({ ...item, status:value })
+    updateStatusOrder({ ...item, status:value })
+    // dispatch(UpdateOrder({ id, item: {...item, status:value} }));
 
   };
   useEffect(()=>{
@@ -102,6 +104,10 @@ const CustomSelect = styled.div`
   }
   .ant-select-selector {
     padding: 0 !important;
+  }
+  .ant-select-selection-item>span{
+    width: 100%!important;
+    text-align: center;
   }
   
 `;

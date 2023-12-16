@@ -40,3 +40,15 @@ export const UpdateCartItem = createAsyncThunk("UpdateCartItem", async ({ id, it
         return thunkAPI.rejectWithValue(error.message)
     }
 });
+export const DeleteAllCartItems = createAsyncThunk('DeleteAllCartItems', async () => {
+    try {
+      const response = await axios.delete('http://localhost:3000/cart');
+      console.log("DeleteAllCartItems",response)
+      return response.data;
+    } catch (error) {
+      console.error('Error deleting all cart items:', error.message);
+      throw error; 
+    }
+  });
+
+  

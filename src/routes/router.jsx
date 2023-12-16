@@ -3,7 +3,6 @@ import AddNew from "../pages/Admin/AddNew";
 import Books from "../pages/Admin/Books";
 import Dashboard from "../pages/Admin/Dashboard";
 import EditProduct from "../pages/Admin/EditProduct";
-import OrderDetail from "../pages/Admin/OrderDetail";
 import Orders from "../pages/Admin/Orders";
 import ProductDetail from "../pages/Admin/ProductDetail";
 import Site from "../pages/Site";
@@ -42,7 +41,7 @@ const RoutesConfig = [
                 element: <Cart />
             },
             {
-                path: 'check-out',
+                path: 'checkout',
                 element: <Checkout />
             },
             {
@@ -50,7 +49,7 @@ const RoutesConfig = [
                 element: <Wishlist />
             },
             {
-                path: 'order-complate',
+                path: 'order-complate/:id',
                 element: <OrderComplate />
             },
             {
@@ -78,10 +77,6 @@ const RoutesConfig = [
             {
                 path: 'book/detail/:id',
                 element: <ProductDetail />
-            },
-            {
-                path: 'order/detail/:id',
-                element: <OrderDetail />
             },
             {
                 path: 'edit/:id',

@@ -19,6 +19,7 @@ export const CartProvider = ({ children }) => {
         dispatch(GetCartItems());
     };
 
+    
     useEffect(() => {
         getCarts();
     }, []);
@@ -40,38 +41,40 @@ export const CartProvider = ({ children }) => {
             };
 
             dispatch(PostCartItem(newItemWithAdditionalFields))
+            toast.success("Item added to the cart");
         }
     }
 
     const increaseItemCount = (item) => {
         const { id } = item;
-        const updatedCarts = carts.map(item => {
-            if (item.id === id) {
-                return {
-                    ...item,
-                    count: item.count + 1,
-                    totalPrice: (item.count + 1) * item.price
-                };
-            }
-            return item;
-        });
+        let foundItem = carts.find((item) => item.id == id)
+        if (!foundItem) {
+            toast.error('item does not exist')
+        } else {
+            foundItem = { ...foundItem, count: foundItem.count + 1 , totalPrice: (foundItem.price * (foundItem.count+1)) }
+            dispatch(UpdateCartItem({ id, item: foundItem }));
+            toast.success("Item updated");
 
-        const updatedItem = updatedCarts.find(item => item.id === id);
-        dispatch(UpdateCartItem({ id, item: updatedItem }));
+            return;
+        }   
     }
     const decreaseItemCount = (item) => {
         const { id } = item;
-        const foundItem = carts.find((item) => item.id == id)
+        let foundItem = carts.find((item) => item.id == id)
         if (!foundItem) {
             toast.error('item does not exist')
         } else {
             if (item.count > 1) {
-                foundItem = { ...foundItem, count: foundItem.count - 1 }
+                foundItem = { ...foundItem, count: foundItem.count - 1,totalPrice: (foundItem.price * (foundItem.count-1))  }
             } else {
                 dispatch(DeleteCartItem(id))
+                toast.error("Item removed from cart");
+
                 return;
             }
             dispatch(UpdateCartItem({ id, item: foundItem }));
+            toast.success("Item updated");
+
             return;
         }
     }
