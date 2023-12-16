@@ -8,6 +8,7 @@ import Title from "antd/es/typography/Title";
 import { Link } from "react-router-dom";
 import { DeleteOutlined } from "@ant-design/icons";
 import StatusSelect from "../../../components/StatusSelect";
+import OrdersTable from "../../../components/OrdersTable";
 const Orders = () => {
   const dispatch = useDispatch();
   const { orders, loading, error } = useSelector((state) => state.order);
@@ -18,61 +19,6 @@ const Orders = () => {
     getOrders();
   }, []);
 
-  const columns = [
-    {
-      title: "Title",
-      dataIndex: "title",
-      key: "title",
-    },
-    {
-      title: "Author",
-      dataIndex: "author",
-      key: "author",
-    },
-    {
-      title: "Genre",
-      dataIndex: "genre",
-      key: "genre",
-    },
-    {
-      title: "Amount",
-      dataIndex: "count",
-      key: "count",
-    },
-    {
-      title: "Price",
-      dataIndex: "price",
-      key: "price",
-    },
-    {
-      title: "Status",
-      dataIndex: "status",
-      key: "status",
-      render: (status, item) => {
-        return (
-          <StatusSelect item={item}/>
-        );
-      },
-    },
-    {
-      title: "Action",
-      key: "action",
-      render: (item) => {
-        return (
-          <Space size="middle">
-            {/* 'book/detail/:id', */}
-            <Link to={`/admin/order/detail/${item.id}`}>
-              <i class="fa-light fa-memo-circle-info"></i>
-            </Link>
-
-            <a onClick={() => dispatch(DeleteOrder(item.id))}>
-              <DeleteOutlined style={{ color: "red" }} />
-            </a>
-          </Space>
-        );
-      },
-    },
-  ];
 
   return (
     <Fragment>
@@ -90,14 +36,13 @@ const Orders = () => {
               marginBottom: "0.5rem",
             }}
           >
-            {/* <Button>Add New</Button> */}
           </Col>
         </Row>
       </Typography>
       {loading ? (
         <Spin />
       ) : (
-        <Table columns={columns} dataSource={orders} pagination={true} />
+        <OrdersTable orders={orders} pagination={true}/>
       )}
     </Fragment>
   );

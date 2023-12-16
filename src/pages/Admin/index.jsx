@@ -6,6 +6,7 @@ import { Content } from "antd/es/layout/layout";
 import {
   BookOutlined,
   DashboardOutlined,
+  GlobalOutlined,
   ShoppingCartOutlined,
 } from "@ant-design/icons";
 import Title from "antd/es/typography/Title";
@@ -25,6 +26,7 @@ const Admin = () => {
     getItem("Dashboard", "1", <DashboardOutlined />, "/admin"),
     getItem("Books", "2", <BookOutlined />, "books"),
     getItem("Orders", "3", <ShoppingCartOutlined />, "orders"),
+    getItem("Go to Site", "4", <GlobalOutlined />, "/"),
   ];
   return (
     <div>
