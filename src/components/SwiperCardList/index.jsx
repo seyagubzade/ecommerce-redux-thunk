@@ -10,7 +10,6 @@ import './styles.css';
 import { Grid, Pagination } from 'swiper/modules';
 import CustomCard from '../CustomCard';
 const SwiperCardList = ({items, slidesPerView=3, rows=2, spaceBetween=12, isSmall }) => {
-    console.log(isSmall)
   return (
     <Swiper
         slidesPerView={slidesPerView}
