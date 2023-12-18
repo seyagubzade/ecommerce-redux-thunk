@@ -37,7 +37,7 @@ const DesktopHeader = ({items}) => {
         </Col>
 
       </Row>
-      <Row className="header-bottom" justify="space-between">
+      {/* <Row className="header-bottom" justify="space-between">
         <Col >
           <StyledHeaderSearch className="header-search-block">
             <input type="text" placeholder="Search entire store here" />
@@ -59,7 +59,7 @@ const DesktopHeader = ({items}) => {
 
         </Col>
 
-      </Row>
+      </Row> */}
     </StyledHeader>
   )
 }

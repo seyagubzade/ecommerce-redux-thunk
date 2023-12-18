@@ -267,9 +267,7 @@ const StyledContact = styled.div`
     text-shadow: none;
     text-transform: uppercase;
   }
-  @media screen and (min-width: 920px) {
-    width: 720px;
-  }
+
   @media screen and (min-width: 1200px) {
     width: 1140px;
   }

@@ -46,7 +46,7 @@ const CustomCard = ({ item }) => {
                   <i className="fas fa-heart"></i>
                 </Link>
                 <Link
-                  to={`detail/${item.id}`}
+                  to={`/detail/${item.id}`}
                   data-bs-toggle="modal"
                   data-bs-target="#quickModal"
                   className="single-btn"
